@@ -11,4 +11,4 @@ source kokoro/release/ruby/linux/prepare_build.sh
 source kokoro/release/ruby/linux/ruby/ruby_build_environment.sh
 
 # build artifacts
-bash kokoro/release/ruby/linux/ruby/ruby_build.sh
+bash --login kokoro/release/ruby/linux/ruby/ruby_build.sh
