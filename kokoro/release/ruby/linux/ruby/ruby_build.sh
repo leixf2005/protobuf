@@ -17,7 +17,9 @@ ls pkg
 mv pkg/* $ARTIFACT_DIR
 
 # JRuby
+set +ex
 rvm use jruby
+set -ex
 rake build && gem build google-protobuf.gemspec
 mv google-protobuf-*-java.gem $ARTIFACT_DIR
 
